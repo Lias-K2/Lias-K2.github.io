@@ -84,3 +84,18 @@ body {
         font-size: 1.5rem;
     }
 }
+
+/* ===== HERO HEADER – WEEK 2 ===== */
+.hero-header {
+    background: linear-gradient(135deg, #2c3864, #5a3d7c);
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 0;
+}
+
+.hero-header h1 {
+  line-height: 1.6;
+  opacity: 0.95;
+
+  }
