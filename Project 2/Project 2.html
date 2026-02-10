@@ -35,7 +35,49 @@
 <!-- Content: Brief introduction + call-to-action button linking to Projects -->
 <!-- Technical approach: CSS linear-gradient, large typography, centered layout, responsive padding -->
 <header class="hero-header">
-    <h1>Hi, I’m Lias</h1>
+    <h1>Hi, I'm Lias</h1>
     <p>A web developer passionate about clean design, accessibility, and meaningful user experiences.</p>
     <a href="#projects" class="cta-button">View My Work</a>
 </header>
+
+
+
+<main class="about-section">
+    <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+            I'm a web developer with a strong eye for design and a passion for creating websites that are both beautiful and accessible.
+            I enjoy turning ideas into clean, functional code—and I believe great user experience starts with thoughtful structure and inclusive design.
+        </p>
+        <p>
+            Outside of coding, I love gaming, watching movies, and exploring how technology can solve real-world problems.
+            I'm always learning, always building, and adapting.
+        </p>
+        <!-- JavaScript Color Switcher Button -->
+        <button id="colorSwitcher" class="color-switcher">Change Section Theme</button>
+    </div>
+    <img src="https://images.unsplash.com/photo-1534665482403-a909d0d97c67?ixlib=rb-1.2.1&q=80&fm=jpg"
+         alt="Me smiling in front of a laptop, working on code"
+         loading="lazy">
+</main>
+
+
+<script>
+    // Week 3: Simple JavaScript color switcher
+    const section = document.querySelector('.about-section');
+    const button = document.getElementById('colorSwitcher');
+   
+    let isDefault = true;
+    button.addEventListener('click', () => {
+        if (isDefault) {
+            section.style.backgroundColor = '#f8f9fa';
+            section.style.color = '#2c3e50';
+            button.textContent = 'Switch Back';
+        } else {
+            section.style.backgroundColor = '';
+            section.style.color = '';
+            button.textContent = 'Change Section Theme';
+        }
+        isDefault = !isDefault;
+    });
+</script>
