@@ -151,3 +151,67 @@ body {
     }
 }
 
+/* ===== Main Section Week 3 ===== */
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 60px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    color: #34495e;
+}
+
+.about-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.about-section img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.color-switcher {
+    margin-top: 24px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.color-switcher:hover {
+    background-color: #2980b9;
+}
+
+/* Center image on mobile */
+@media (max-width: 768px) {
+    .about-section {
+        grid-template-columns: 1fr;
+        padding: 40px 5%;
+        text-align: center;
+    }
+
+    .about-section img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
