@@ -215,3 +215,77 @@ body {
     }
 }
 
+/* ===== PORTFOLIO SECTION – WEEK 4 ===== */
+.portfolio-section {
+    padding: 60px 10%;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    padding: 24px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.portfolio-card:hover,
+.portfolio-card:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    outline: none;
+}
+
+.portfolio-card h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.portfolio-card p {
+    font-size: 1rem;
+    color: #34495e;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.like-button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #95a5a6;
+    transition: color 0.2s ease;
+}
+
+.like-button:hover .heart {
+    color: #e74c3c;
+}
+
+.heart.liked {
+    color: #e74c3c;
+}
+
+
