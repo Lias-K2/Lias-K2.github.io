@@ -144,6 +144,88 @@
     });
 </script>
 
+<!-- FOOTER PLANERING VECKA 5 -->
+<!-- Purpose: Create a professional footer that completes the website with contact info and branding -->
+<!-- Content: Contact details, social media links, simple contact form, and copyright -->
+<!-- Layout: Multi-column CSS Grid for organized, responsive structure -->
+<!-- Functionality: JavaScript form validation to check required fields and email format -->
+<!-- Overall impression: Footer ties the entire site together with a polished, professional finish -->
+<footer class="site-footer">
+    <div class="footer-grid">
+        <!-- Column 1: About -->
+        <div class="footer-column">
+            <h3>MySite</h3>
+            <p>A portfolio showcasing my work in web development, design, and creative projects.</p>
+        </div>
+
+        <!-- Column 2: Contact Info -->
+        <div class="footer-column">
+            <h4>Contact</h4>
+            <ul class="contact-list">
+                <li>Email: ryan@example.com</li>
+                <li>Phone: +46 70 123 4567</li>
+                <li>Location: Stockholm, Sweden</li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Social Media -->
+        <div class="footer-column">
+            <h4>Follow Me</h4>
+            <ul class="social-links">
+                <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4: Contact Form -->
+        <div class="footer-column">
+            <h4>Get in Touch</h4>
+            <form id="contactForm" class="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <button type="submit" class="submit-button">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Ryan. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    // Week 5: Contact Form Validation
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const submitButton = this.querySelector('.submit-button');
+        
+        // Reset previous messages
+        let message = '';
+        
+        // Validate name
+        if (name === '') {
+            message = 'Please enter your name.';
+        } 
+        // Validate email format
+        else if (!email.includes('@') || !email.includes('.')) {
+            message = 'Please enter a valid email address.';
+        } 
+        // Success
+        else {
+            message = 'Thank you! Your message has been sent.';
+            this.reset();
+        }
+        
+        // Show feedback
+        alert(message);
+    });
+</script>
+
+
 
 
 

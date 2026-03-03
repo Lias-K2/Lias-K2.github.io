@@ -236,6 +236,7 @@ body {
     gap: 24px;
     max-width: 1200px;
     margin: 0 auto;
+    justify-items: center; 
 }
 
 .portfolio-card {
@@ -287,5 +288,4 @@ body {
 .heart.liked {
     color: #e74c3c;
 }
-
 
