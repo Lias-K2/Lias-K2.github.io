@@ -1,0 +1,45 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #34495e;
+    background-color: #f8f9fa;
+}
+
+/* Header */
+.site-header {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.site-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.site-header p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+/* Navigation */
+.site-nav {
+    background-color: #2c3e50;
+    padding: 15px 20px;
+}
+
+.site-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
