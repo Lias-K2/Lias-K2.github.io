@@ -14,32 +14,34 @@
         <nav class="main-nav">
             <ul>
                 <li><a href="#" class="nav-link">Home</a></li>
-                <li class="dropdown">
+            <li class="dropdown">
                  <a href="#" class="nav-link">Games ▼</a>
-                 <div class="mega-menu">
+              <div class="mega-menu">
                  <div class="menu-section">
                  <h3>Action & Adventure</h3>
                  <ul>
                  <li><a href="#">Cyberpunk 2077</a></li>
-                 <li><a href="#">Elden Ring</a></li>
+           <li><a href="#">Elden Ring</a></li>
                  <li><a href="#">God of War</a></li>
                  <li><a href="#">Horizon Zero Dawn</a></li>
                  </ul>
-                </div>
+         </div>
                  <div class="menu-section">
-                    
+
   
                  <h3>Multiplayer</h3>
                  <ul>
                 <li><a href="#">Valorant</a></li>
-                <li><a href="#">Apex Legends</a></li>
+          <li><a href="#">Apex Legends</a></li>
                 <li><a href="#">Overwatch 2</a></li>
-                <li><a href="#">Fortnite</a></li>
+           <li><a href="#">Fortnite</a></li>
                 </ul>
                 </div>
                 
                 <div class="menu-section">
                 <h3>Indie Gems</h3>
+               
+               
                 <ul>
                 <li><a href="#">Hollow Knight</a></li>
                 <li><a href="#">Stardew Valley</a></li>
@@ -96,3 +98,46 @@
         <li><a href="#">Action & Adventure</a></li>
         <li><a href="#">Multiplayer</a></li>
         <li><a href="#">Indie Gems</a></li>
+
+       
+            </ul>
+            </li>
+            <li class="mobile-item">
+                <a href="#" class="toggle-sub">Tech ▼</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Hardware</a></li>
+                    <li><a href="#">Software</a></li>
+                </ul>
+            </li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Community</a></li>
+        </ul>
+    </nav>
+
+    <main class="hero">
+        <h1>Welcome to Nexus Hub</h1>
+        <p>Your gateway to gaming, tech, and digital culture.</p>
+    </main>
+
+    <script>
+        // Mobile menu toggle
+        const mobileBtn = document.getElementById('mobileToggle');
+        const mobileNav = document.getElementById('mobileNav');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+            mobileBtn.classList.toggle('active');
+        });
+
+        // Mobile submenu toggle
+        document.querySelectorAll('.toggle-sub').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const subMenu = btn.nextElementSibling;
+                subMenu.classList.toggle('open');
+                btn.classList.toggle('open');
+            });
+        });
+        </script>
+        </body>
+        </html>
